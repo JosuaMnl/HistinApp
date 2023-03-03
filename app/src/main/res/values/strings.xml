@@ -31,7 +31,7 @@
         <item>Keraton Kasepuhan adalah keraton termegah dan paling terawat di Cirebon. Makna di setiap sudut arsitektur keraton ini pun terkenal paling bersejarah. Halaman depan keraton ini dikelilingi tembokbata merah dan terdapat pendopo di dalamnya. Keraton Kasepuhan adalah kerajaan islam tempat para pendiri cirebon bertahta, disinilah pusat pemerintahan Kasultanan Cirebon berdiri.</item>
         <item>Kerajaan Ternate berdiri sebagai hasil konsensus para momole yang berkuasa ketika daerah ini mulai banyak didatangi pedangang asing pada permulaan abad ke-13Para pedagang yang singgah menghadapi ancaman dari perompak di sekitaran Kepulauan Maluku Keadaan ini mendorong para momole yang berasal dari Toboleu, Tobanga, Tobana dan Tubo mengadakan rembukan untuk mencari solusi atas prakarsa Momole Guna dari Tobona Pertemuan ini dilakukan tahun 1255 M di Foramadiahi, di lereng bagian selatan Gunung Gamalama.</item>
     </string-array>
-    
+
     <string-array name="data_city">
         <item>Jakarta Pusat</item>
         <item>Jakarta Pusat</item>
@@ -45,7 +45,7 @@
         <item>Cirebon</item>
         <item>Maluku</item>
     </string-array>
-    
+
     <string-array name="data_date_of_build">
         <item>17 Agustus 1961</item>
         <item>20 Mei 1974</item>
