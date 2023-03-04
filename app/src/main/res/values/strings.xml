@@ -3,6 +3,21 @@
     <string name="historical_sites_in_indonesia">Historical Sites In Indonesia</string>
     <string name="name_sites">Nama Tempat</string>
     <string name="description">Deskripsi</string>
+    <string name="share">Share</string>
+    <string name="name_detail">Nama Tempat</string>
+    <string name="title_description_detail">Deskripsi :</string>
+    <string name="description_detail">Isi Deskripsi</string>
+    <string name="content_description_img_detail">Gambar Tempat Bersejarah di Indonesia</string>
+    <string name="title_city_detail">Kota :</string>
+    <string name="city_detail">Isi Kota</string>
+    <string name="menu_about_page">About Page</string>
+    <string name="menu_mode_linear">Mode Linear</string>
+    <string name="menu_mode_grid">Mode Grid</string>
+    <string name="content_description_img">Gambar Tempat Sejarah</string>
+    <string name="title_date_detail">Tanggal :</string>
+    <string name="date_detail">Isi Tanggal</string>
+    <string name="about_name">Josua Manalu</string>
+    <string name="about_gmail">josuamnalu@gmail.com</string>
 
     <string-array name="data_name_sites">
         <item>Monumen Nasional (Monas)</item>

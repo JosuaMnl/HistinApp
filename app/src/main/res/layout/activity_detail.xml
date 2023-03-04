@@ -1,115 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    android:padding="24dp"
+    tools:context=".DetailActivity"
+    android:background="@color/brown_light">
 
-    <ImageView
-        android:id="@+id/img_detail"
-        android:layout_width="80dp"
-        android:layout_height="100dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_detail"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
         android:padding="8dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/img_detail"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:contentDescription="@string/content_description_img_detail"
+            android:scaleType="centerCrop"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tv_name_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nama Tempat"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064" />
+        style="@style/TextContent.SubTitle"
+        android:text="@string/name_detail"
+        />
 
     <TextView
         android:id="@+id/tv_title_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="303dp"
-        android:text="Deskripsi :"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_detail"
-        app:layout_constraintVertical_bias="0.0" />
+        style="@style/TextContent.TitleDescription"
+        android:layout_below="@id/card_img"
+        android:text="@string/title_description_detail" />
 
-    <TextView
-        android:id="@+id/tv_description_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:justificationMode="inter_word"
-        android:padding="8dp"
-        android:text="Isi Deskripsi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="@+id/tv_title_description"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_description" />
+    <ScrollView
+        android:id="@+id/sv_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_share"
+        android:layout_below="@id/tv_title_description"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <TextView android:id="@+id/tv_description_detail"
+            style="@style/TextContent.ContentDescription"
+            android:justificationMode="inter_word"
+            android:text="@string/description_detail"
+            tools:targetApi="26" />
+    </ScrollView>
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="Kota"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toEndOf="@+id/img_detail"
-        app:layout_constraintTop_toTopOf="parent" />
+        style="@style/TextContent.TitleDetail"
+        android:layout_below="@id/tv_name_detail"
+        android:layout_toEndOf="@id/card_img"
+        android:text="@string/title_city_detail"
+         />
 
     <TextView
         android:id="@+id/tv_city_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Isi Kota"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.0" />
+        style="@style/TextContent.ContentDetail"
+        android:layout_below="@id/textView5"
+        android:layout_toEndOf="@id/card_img"
+        android:text="@string/city_detail" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Tanggal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.016"
-        app:layout_constraintStart_toEndOf="@+id/img_detail"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.05" />
+        style="@style/TextContent.TitleDetail"
+        android:layout_below="@id/tv_city_detail"
+        android:layout_toEndOf="@id/card_img"
+        android:text="@string/title_date_detail"
+        />
 
     <TextView
         android:id="@+id/tv_date_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Isi Tanggal"
-        app:layout_constraintBottom_toBottomOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.0" />
+        style="@style/TextContent.ContentDetail"
+        android:layout_below="@id/textView7"
+        android:layout_toEndOf="@id/card_img"
+        android:text="@string/date_detail" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_share"
+            style="@style/TextContent.ButtonShare"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/share"
+            />
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@color/brown_light">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/my_photo"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/my_photo"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextContent.AboutName"
+        android:text="@string/about_name"
+        android:layout_below="@id/my_photo" />
+
+    <TextView
+        style="@style/TextContent.AboutEmail"
+        android:text="@string/about_gmail"
+        android:layout_below="@id/tv_name" />
+</RelativeLayout>
