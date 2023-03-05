@@ -2,9 +2,10 @@
 <resources>
     <color name="brown">#6B462A</color>
     <color name="brown_light">#D7B89A</color>
-    <color name="brown_dark">#7B3F00</color>
+    <color name="brown_another_dark">#5D4037</color>
+    <color name="brown_dark">#3E2723</color>
     <color name="orange">#D2691E</color>
-    <color name="orange_light">#B87333</color>
+    <color name="orange_light">#B5916D</color>
     <color name="orange_dark">#C04000</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>

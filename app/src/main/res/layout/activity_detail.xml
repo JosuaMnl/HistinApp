@@ -10,21 +10,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/CardImageHistinDetail"
         android:layout_below="@id/tv_name_detail"
-        android:layout_margin="5dp"
-        android:elevation="10dp"
-        android:padding="8dp"
         app:cardCornerRadius="8dp">
 
         <ImageView
             android:id="@+id/img_detail"
-            android:layout_width="180dp"
-            android:layout_height="200dp"
-            android:background="@color/white"
+            style="@style/ImageHistinDetail"
             android:contentDescription="@string/content_description_img_detail"
-            android:scaleType="centerCrop"
             tools:ignore="ImageContrastCheck"
             tools:srcCompat="@tools:sample/avatars" />
     </androidx.cardview.widget.CardView>
@@ -43,18 +36,16 @@
 
     <ScrollView
         android:id="@+id/sv_description"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/btn_share"
-        android:layout_below="@id/tv_title_description"
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp">
+        style="@style/ScrollView"
+        android:layout_above="@id/action_share"
+        android:layout_below="@id/tv_title_description">
 
-        <TextView android:id="@+id/tv_description_detail"
+        <TextView
+            android:id="@+id/tv_description_detail"
             style="@style/TextContent.ContentDescription"
             android:justificationMode="inter_word"
             android:text="@string/description_detail"
+            android:textColor="@color/brown_another_dark"
             tools:targetApi="26" />
     </ScrollView>
 
@@ -71,7 +62,8 @@
         style="@style/TextContent.ContentDetail"
         android:layout_below="@id/textView5"
         android:layout_toEndOf="@id/card_img"
-        android:text="@string/city_detail" />
+        android:text="@string/city_detail"
+        android:textColor="#5D4037" />
 
     <TextView
         android:id="@+id/textView7"
@@ -86,10 +78,11 @@
         style="@style/TextContent.ContentDetail"
         android:layout_below="@id/textView7"
         android:layout_toEndOf="@id/card_img"
-        android:text="@string/date_detail" />
+        android:text="@string/date_detail"
+        android:textColor="#5D4037" />
 
         <Button
-            android:id="@+id/btn_share"
+            android:id="@+id/action_share"
             style="@style/TextContent.ButtonShare"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"

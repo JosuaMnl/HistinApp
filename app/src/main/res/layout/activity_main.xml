@@ -10,7 +10,7 @@
         android:id="@+id/rv_history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_title"/>
+        android:layout_below="@+id/tv_title" />
 
     <TextView
         android:id="@+id/tv_title"
